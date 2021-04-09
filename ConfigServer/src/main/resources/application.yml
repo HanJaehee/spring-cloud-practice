@@ -1,0 +1,14 @@
+server:
+  port: 8888 # 기본 어플리케이션 포트와 겹치지 않게 변경
+spring:
+  cloud:
+    config:
+      server:
+        encrypt.enabled: false
+        git:
+          uri: 깃 레포지토리
+          #이 밑은 private 레포지토리를 사용하실 때 넣어주세요
+          #timeout: 10
+          #username:
+          #password:
+          #skip-ssl-validation: true
